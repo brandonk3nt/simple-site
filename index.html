@@ -8,12 +8,20 @@
 </head>
 
 <body>
-  <h1>This is a game.</h1>
+  <h1 class="title">Numba Crushas</h1>
+  
+  <h2>guess a number between 1 - 10...</h2>
 
   <form id="game-form">
     <input name="guess" type="number" placeholder="Guess a number between 1 - 10" />
     <button type="submit">Submit Guess</button>
   </form>
+
+  <div id="error">
+    <pre>You have failed, loser.</pre>
+    <pre>The correct number was:</pre>
+    <pre id="answer"></pre>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
   <script type="module" src="./main.js"></script>

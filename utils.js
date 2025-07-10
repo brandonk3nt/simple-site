@@ -51,3 +51,24 @@ export function playFireworks() {
   setTimeout(() => audio.play(), 250);
   setTimeout(() => audio.pause(), 3000);
 }
+
+export function playTrombone() {
+  const audio = new Audio('./trombone.mp3');
+  audio.playbackRate = 1.5;
+  audio.currentTime = 0;
+  audio.play();
+}
+
+export function showError() {
+  const error = document.getElementById('error');
+  error.style.display = "block";
+}
+
+export function hideError() {
+  const error = document.getElementById('error');
+  error.style.display = "none";
+}
+
+export function generateNumber() {
+  return Math.floor(Math.random() * 10) + 1;
+}
